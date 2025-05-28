@@ -39,10 +39,10 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
     <div class="container">
         <!-- judul -->
-        <h1 class="mt-3">Data Sparepart</h1>
+        <h1 class="mt-3">Data Harga Sparepart</h1>
         <figure>
             <blockquote class="blockquote">
-                <p>Berisi data barang sparepart yang tersedia</p>
+                <p>Berisi data harga sparepart yang tersedia</p>
             </blockquote>
             <figcaption class="blockquote-footer">
                 CRUD - <cite title="Source Title">Create, Read, Update, Delete</cite>
@@ -51,8 +51,10 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
         <!-- akhir judul -->
 
         <!-- button tambah data -->
-        <a href="kelola.php" type="button" class="btn btn-primary mb-3"><i
-                class="bi bi-person-plus-fill me-2"></i>Tambah Data</a>
+        <a href="kelola.php?tambah=sparepart" type="button" class="btn btn-primary mb-3">
+            <i class="bi bi-person-plus-fill me-2"></i>
+                Tambah Data
+            </a>
         <!-- akhir button tambah data -->
 
         <!-- tabel -->
@@ -65,6 +67,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
                         <th>Harga Barang</th>
                         <th>Jenis Barang</th>
                         <th>Merk Barang</th>
+                        <th>Jumlah Barang</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -87,13 +90,20 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
                                 <?= $hasil['merk_barang']; ?>
                             </td>
                             <td>
+                                <?= $hasil['jumlah_barang']; ?>
+                            </td>
+                            <td>
                                 <a href="kelola.php?ubah=<?= $hasil['kd_barang']; ?>" type="button"
-                                    class="btn btn-success btn-sm mb-2 mt-2"><i
-                                        class="bi bi-pencil-square me-2"></i>Ubah</a>
+                                    class="btn btn-success btn-sm mb-2 mt-2">
+                                    <i class="bi bi-pencil-square me-2"></i>
+                                    Ubah
+                                </a>
 
-                                <a href="proses.php?hapus=<?= $hasil['kd_barang']; ?>" type="button"
-                                    class="btn btn-danger btn-sm mb-2 mt-2"><i
-                                        class="bi bi-person-dash-fill me-2"></i>Hapus</a>
+                                <a href="proses.php?hapusSparepart=<?= $hasil['kd_barang']; ?>" type="button"
+                                    class="btn btn-danger btn-sm mb-2 mt-2">
+                                    <i class="bi bi-person-dash-fill me-2"></i>
+                                        Hapus
+                                    </a>
                             </td>
                         </tr>
                     <?php endwhile; ?>

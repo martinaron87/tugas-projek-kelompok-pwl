@@ -39,10 +39,10 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
     <div class="container">
         <!-- judul -->
-        <h1 class="mt-3">Data Service</h1>
+        <h1 class="mt-3">Data Biaya Jasa Service</h1>
         <figure>
             <blockquote class="blockquote">
-                <p>Berisi data service yang sudah dikerjakan</p>
+                <p>Berisi data biaya jasa service</p>
             </blockquote>
             <figcaption class="blockquote-footer">
                 CRUD - <cite title="Source Title">Create, Read, Update, Delete</cite>
@@ -51,8 +51,10 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
         <!-- akhir judul -->
 
         <!-- button tambah data -->
-        <a href="kelola.php" type="button" class="btn btn-primary mb-3"><i
-                class="bi bi-person-plus-fill me-2"></i>Tambah Data</a>
+        <a href="kelola.php?tambah=servis" type="button" class="btn btn-primary mb-3">
+            <i class="bi bi-person-plus-fill me-2"></i>
+            Tambah Data
+        </a>
         <!-- akhir button tambah data -->
 
         <!-- tabel -->
@@ -80,12 +82,16 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
                             </td>
                             <td>
                                 <a href="kelola.php?ubah=<?= $hasil['id_service']; ?>" type="button"
-                                    class="btn btn-success btn-sm mb-2 mt-2"><i
-                                        class="bi bi-pencil-square me-2"></i>Ubah</a>
+                                    class="btn btn-success btn-sm mb-2 mt-2">
+                                    <i class="bi bi-pencil-square me-2"></i>
+                                    Ubah
+                                </a>
 
-                                <a href="proses.php?hapus=<?= $hasil['id_service']; ?>" type="button"
-                                    class="btn btn-danger btn-sm mb-2 mt-2"><i
-                                        class="bi bi-person-dash-fill me-2"></i>Hapus</a>
+                                <a href="proses.php?hapusService=<?= $hasil['id_service']; ?>" type="button"
+                                    class="btn btn-danger btn-sm mb-2 mt-2" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                    <i class="bi bi-person-dash-fill me-2"></i>
+                                    Hapus
+                                </a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
