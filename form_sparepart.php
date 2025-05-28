@@ -100,7 +100,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
                                 </a>
 
                                 <a href="proses.php?hapusSparepart=<?= $hasil['kd_barang']; ?>" type="button"
-                                    class="btn btn-danger btn-sm mb-2 mt-2">
+                                    class="btn btn-danger btn-sm mb-2 mt-2" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
                                     <i class="bi bi-person-dash-fill me-2"></i>
                                         Hapus
                                     </a>
