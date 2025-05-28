@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2025 at 04:48 PM
+-- Generation Time: May 28, 2025 at 03:02 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,8 +41,11 @@ CREATE TABLE `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `jenis_kelamin`, `nomor_telepon`, `alamat`, `tanggal`) VALUES
-('001', 'Martin Aron', 'Laki-laki', '081201019090', 'dirumah', '2025-05-27 20:48:00'),
-('002', 'Yoga Nur', 'Laki-laki', '085839391010', 'disekolah', '2025-05-27 20:49:00');
+('001', 'Carmila', 'Wanita', '79865423', 'Land Of Dawn', '2025-05-28 18:58:00'),
+('002', 'Ahmad Nur', 'Pria', '081231290803', 'DI PS MINGGU', '2025-05-28 09:15:00'),
+('003', 'Reza GYAT', 'Pria', '091283983289', 'di cibubur', '2025-05-28 09:16:00'),
+('004', 'Amelia', 'Wanita', '08129038102', 'aioudoaisd', '2025-05-28 09:10:00'),
+('005', 'Sandy Abdillah', 'Pria', '98798546', 'Condet', '2025-05-28 18:51:00');
 
 -- --------------------------------------------------------
 
@@ -62,7 +65,8 @@ CREATE TABLE `service` (
 
 INSERT INTO `service` (`id_service`, `jenis_service`, `biaya_service`) VALUES
 ('S001', 'Ganti Baterai Laptop', 150000),
-('S002', 'Ganti Layar Laptop', 400000);
+('S002', 'Ganti layar laptop', 100000),
+('S003', 'Bersihin laptop', 75000);
 
 -- --------------------------------------------------------
 
@@ -75,16 +79,18 @@ CREATE TABLE `sparepart` (
   `nama_barang` varchar(255) NOT NULL,
   `harga_barang` mediumint(9) NOT NULL,
   `jenis_barang` varchar(255) NOT NULL,
-  `merk_barang` varchar(255) NOT NULL
+  `merk_barang` varchar(255) NOT NULL,
+  `jumlah_barang` smallint(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `sparepart`
 --
 
-INSERT INTO `sparepart` (`kd_barang`, `nama_barang`, `harga_barang`, `jenis_barang`, `merk_barang`) VALUES
-('B001', 'Baterai Laptop Asus TUF 15', 500000, 'Baterai', 'Asus'),
-('B002', 'Layar Laptop Lenovo LOQ 15', 350000, 'Layar Laptop', 'Lenovo');
+INSERT INTO `sparepart` (`kd_barang`, `nama_barang`, `harga_barang`, `jenis_barang`, `merk_barang`, `jumlah_barang`) VALUES
+('B001', 'Baterai Laptop Asus TUF 15', 500000, 'Baterai', 'Asus', 20),
+('B002', 'Layar Laptop Lenovo LOQ 15', 350000, 'Layar Laptop', 'Lenovo', 20),
+('B003', 'Charger Laptop Redmi', 450000, 'Charger Laptop', 'Xiaomi', 10);
 
 --
 -- Indexes for dumped tables
