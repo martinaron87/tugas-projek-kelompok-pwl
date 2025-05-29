@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2025 at 03:02 PM
+-- Generation Time: May 29, 2025 at 04:50 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,11 +41,12 @@ CREATE TABLE `pelanggan` (
 --
 
 INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `jenis_kelamin`, `nomor_telepon`, `alamat`, `tanggal`) VALUES
-('001', 'Carmila', 'Wanita', '79865423', 'Land Of Dawn', '2025-05-28 18:58:00'),
+('001', 'Carmila', 'Wanita', '000', 'Land Of Dawn Number 1', '2025-05-29 18:58:00'),
 ('002', 'Ahmad Nur', 'Pria', '081231290803', 'DI PS MINGGU', '2025-05-28 09:15:00'),
-('003', 'Reza GYAT', 'Pria', '091283983289', 'di cibubur', '2025-05-28 09:16:00'),
+('003', 'Reza Alfi', 'Pria', '09128009999', 'di cibubur jk', '2025-05-29 09:16:00'),
 ('004', 'Amelia', 'Wanita', '08129038102', 'aioudoaisd', '2025-05-28 09:10:00'),
-('005', 'Sandy Abdillah', 'Pria', '98798546', 'Condet', '2025-05-28 18:51:00');
+('005', 'Sandy Abdillah', 'Pria', '98798546', 'Condet', '2025-05-28 18:51:00'),
+('006', 'Kharisma', 'Wanita', '019283091', 'Condet', '2025-05-29 15:12:00');
 
 -- --------------------------------------------------------
 
@@ -64,9 +65,10 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`id_service`, `jenis_service`, `biaya_service`) VALUES
-('S001', 'Ganti Baterai Laptop', 150000),
-('S002', 'Ganti layar laptop', 100000),
-('S003', 'Bersihin laptop', 75000);
+('S001', 'Ganti Baterai Laptop', 149999),
+('S002', 'Ganti layar laptop', 99999),
+('S003', 'Bersihin laptop', 74999),
+('S004', 'Solder ulang komponen', 39999);
 
 -- --------------------------------------------------------
 
@@ -88,9 +90,10 @@ CREATE TABLE `sparepart` (
 --
 
 INSERT INTO `sparepart` (`kd_barang`, `nama_barang`, `harga_barang`, `jenis_barang`, `merk_barang`, `jumlah_barang`) VALUES
-('B001', 'Baterai Laptop Asus TUF 15', 500000, 'Baterai', 'Asus', 20),
-('B002', 'Layar Laptop Lenovo LOQ 15', 350000, 'Layar Laptop', 'Lenovo', 20),
-('B003', 'Charger Laptop Redmi', 450000, 'Charger Laptop', 'Xiaomi', 10);
+('B001', 'Baterai Laptop Asus TUF 15', 499999, 'Baterai', 'Asus', 19),
+('B002', 'Layar Laptop Lenovo LOQ 15', 349999, 'Layar Laptop', 'Lenovo', 19),
+('B003', 'Charger Laptop Redmi', 450000, 'Charger Laptop', 'Xiaomi', 10),
+('B004', 'ADATA SODIMM 8GB 4800MHz', 349999, 'Ram laptop', 'ADATA', 29);
 
 --
 -- Indexes for dumped tables
