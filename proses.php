@@ -40,7 +40,7 @@ if (isset($_GET['tambah']) && $_GET['tambah'] == 'pelanggan') {
         }
     }
 } else if (isset($_GET['tambah']) && $_GET['tambah'] == 'sparepart') {
-    if (isset($_POST['aksi']) && $_POST['aksi'] == 'edit') {
+    if (isset($_POST['aksi']) && $_POST['aksi'] == 'tambah') {
 
         $kdBrg = $_POST['kodeBarang'];
         $nmBrg = $_POST['namaBarang'];

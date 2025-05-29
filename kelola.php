@@ -40,14 +40,14 @@
 
             <?php elseif (isset($_GET['tambah']) && $_GET['tambah'] == 'servis'): ?>
                 <!-- judul -->
-                <h1 class="mt-3 text-center">TambahData Jasa Service</h1>
+                <h1 class="mt-3 text-center">Tambah Data Jasa Service</h1>
                 <figure class="text-center">
                     <blockquote class="blockquote">
                         <p>Formulir untuk menginput jenis dan biaya jasa service yang tersedia di toko Service Gadget</p>
                     </blockquote>
                 <?php elseif (isset($_GET['tambah']) && $_GET['tambah'] == 'sparepart'): ?>
                     <!-- judul -->
-                    <h1 class="mt-3 text-center">TambaData Barang Sparepart</h1>
+                    <h1 class="mt-3 text-center">Tambah Data Barang Sparepart</h1>
                     <figure class="text-center">
                         <blockquote class="blockquote">
                             <p>Formulir untuk menginput harga sparepart yang tersedia di toko Service Gadget</p>
