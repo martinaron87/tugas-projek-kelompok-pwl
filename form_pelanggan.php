@@ -60,7 +60,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
         <!-- tabel -->
         <div class="table-responsive">
             <table class="table table-light table-striped table-hover table-bordered align-middle">
-                <thead class="text-center">
+                <thead class="text-center align-middle">
                     <tr>
                         <th>ID Pelanggan</th>
                         <th>Nama Pelanggan</th>

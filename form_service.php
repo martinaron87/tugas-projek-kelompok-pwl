@@ -42,7 +42,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
         <h1 class="mt-3">Data Biaya Jasa Service</h1>
         <figure>
             <blockquote class="blockquote">
-                <p>Berisi data biaya jasa service</p>
+                <p>Berisi daftar biaya jasa service</p>
             </blockquote>
             <figcaption class="blockquote-footer">
                 CRUD - <cite title="Source Title">Create, Read, Update, Delete</cite>
@@ -60,7 +60,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
         <!-- tabel -->
         <div class="table-responsive">
             <table class="table table-light table-striped table-hover table-bordered align-middle">
-                <thead class="text-center">
+                <thead class="text-center align-middle">
                     <tr>
                         <th>ID Service</th>
                         <th>Jenis Service</th>

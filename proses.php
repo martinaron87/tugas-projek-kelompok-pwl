@@ -75,6 +75,7 @@ if (isset($_GET['tambah']) && $_GET['tambah'] == 'pelanggan') {
 }
 // akhir fungsi tambah dan edit
 
+
 // fungsi hapus
 if (isset($_GET['hapus'])) {
     $query = "DELETE FROM pelanggan WHERE id_pelanggan = '$_GET[hapus]'";
