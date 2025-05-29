@@ -81,7 +81,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
                                 <?= $hasil['biaya_service']; ?>
                             </td>
                             <td>
-                                <a href="kelola.php?ubah=<?= $hasil['id_service']; ?>" type="button"
+                                <a href="kelola.php?tombol=ubahService&ubah=<?= $hasil['id_service']; ?>" type="button"
                                     class="btn btn-success btn-sm mb-2 mt-2">
                                     <i class="bi bi-pencil-square me-2"></i>
                                     Ubah
