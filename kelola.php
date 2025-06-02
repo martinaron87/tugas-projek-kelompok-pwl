@@ -153,7 +153,7 @@
                                             <button type="submit" name="aksi" value="tambah" class="btn btn-primary me-5"><i
                                                     class="bi bi-plus-square-fill me-2"></i>Tambah Data</button>
 
-                                            <a href="form_sparepart.php" type="button" class="btn btn-danger ms-5"><i
+                                            <a href="form_pelanggan.php" type="button" class="btn btn-danger ms-5"><i
                                                     class="bi bi-arrow-return-left me-2"></i>Batal</a>
                                         </div>
                                     </div>
@@ -197,7 +197,7 @@
                                             <button type="submit" name="aksi" value="tambah" class="btn btn-primary me-5"><i
                                                     class="bi bi-plus-square-fill me-2"></i>Tambah Data</button>
 
-                                            <a href="form_sparepart.php" type="button" class="btn btn-danger ms-5"><i
+                                            <a href="form_service.php" type="button" class="btn btn-danger ms-5"><i
                                                     class="bi bi-arrow-return-left me-2"></i>Batal</a>
                                         </div>
                                     </div>
