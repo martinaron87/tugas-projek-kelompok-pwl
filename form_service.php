@@ -15,7 +15,7 @@ $sql = mysqli_query($conn, $query) or die(mysqli_error($conn));
     <!-- bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
     <!-- akhir bootstrap -->
 
     <!-- css sendiri -->

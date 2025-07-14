@@ -12,7 +12,7 @@ if (isset($_GET['tambah']) && $_GET['tambah'] == 'pelanggan') {
         $alamat = $_POST['alamat'];
         $tanggal = $_POST['tanggal'];
 
-        $query = "INSERT INTO pelanggan VALUES('$idPelanggan', '$nmPelanggan', '$jenisKelamin', '$nomorTelepon', '$alamat', '$tanggal')";
+        $query = "INSERT INTO pelanggan VALUES('$idPelanggan', '$nmPelanggan', '$jenisKelamin', '$nomorTelepon', '$alamat', '$tanggal')";   
 
         $sql = mysqli_query($conn, $query);
 
